@@ -1,0 +1,157 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light grayish blue */
+    color: #2c3e50; /* Darker gray for text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #2980b9; /* Soft blue */
+    text-align: center; /* Center heading */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.navbar {
+    background-color: #34495e; /* Dark slate gray */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.logo {
+    text-align: center;
+    color: #ecf0f1; /* Light gray */
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.nav-links {
+    text-align: center;
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ecf0f1; /* Light gray */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Added transition for color */
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #3498db; /* Brighter blue on hover */
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #34495e; /* Dark slate gray */
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7; /* Light gray */
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    border-color: #2980b9; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #2980b9; /* Soft blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for button effect */
+}
+
+button:hover {
+    background-color: #3498db; /* Brighter blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Profile Display */
+#profileDisplay {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light gray */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar/Booking Section */
+#calendar table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#calendar table th,
+#calendar table td {
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Light gray */
+    text-align: center;
+    background-color: #f9f9f9; /* Very light gray */
+}
+
+#calendar table button {
+    background-color: #2980b9; /* Soft blue */
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calendar table button:hover {
+    background-color: #3498db; /* Brighter blue on hover */
+}
+
+#calendar .emergency {
+    background-color: #e74c3c; /* Red */
+    color: white;
+}
+
+#calendar .emergency:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+/* Booked Appointments Section */
+#appointmentList {
+    margin-top: 20px;
+    background-color: #ecf0f1; /* Light gray */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

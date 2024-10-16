@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="logo">Zeus' Healing Ledger</div>
+        <ul class="nav-links">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="appointments.html">Booked Appointments</a></li>
+        </ul>
+    </nav>
+
+    <!-- Appointment Booking Section -->
+    <div class="container">
+        <section id="appointment" aria-labelledby="appointmentHeading">
+            <h2 id="appointmentHeading">Book an Appointment</h2>
+
+            <div class="input-group">
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" aria-required="true" required>
+                    <option value="" disabled selected>Select a doctor</option>
+                    <option value="Dr. Smith (MD)">Dr. Smith (MD)</option>
+                    <option value="Dr. Johnson (MS)">Dr. Johnson (MS)</option>
+                    <option value="Dr. Brown (ENT Specialist)">Dr. Brown (ENT Specialist)</option>
+                    <option value="Dr. Mark (Cardiac Surgeon)">Dr. Mark (Cardiac Surgeon)</option>
+                    <option value="Dr. Madison (Gynecologist)">Dr. Madison (Gynecologist)</option>
+                    <option value="Dr. Haley (Orthopedic)">Dr. Haley (Orthopedic)</option>
+                    <option value="Dr. Stark (Neuro Surgeon)">Dr. Stark (Neuro Surgeon)</option>
+                    <option value="Dr. Tom (Pediatrician)">Dr. Tom (Pediatrician)</option>
+                    <option value="Dr. Steve (Radiologist)">Dr. Steve (Radiologist)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="appointmentDate">Select Appointment Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required onchange="updateTimeSlots()" aria-required="true">
+            </div>
+
+            <div id="calendar">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time Slot</th>
+                            <th>Doctor Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody id="timeSlots">
+                        <!-- Time slots will be dynamically generated here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
